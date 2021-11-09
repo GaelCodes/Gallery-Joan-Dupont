@@ -1,0 +1,12 @@
+/* Pequeños ajustes en los botones */
+
+[name='uploadButton'],
+[name='loginButton'],
+[name='exitButton'] {
+    font-size: 20px;
+}
+
+[name='loginButton'],
+[name='exitButton'] {
+    top: -20px;
+}
