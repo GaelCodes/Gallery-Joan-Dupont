@@ -9,7 +9,6 @@
     });
 
     var db = firebase.firestore();
-
     var storageRef = firebase.storage().ref();
 }
 
@@ -109,4 +108,63 @@
 
         pintor1.pintar(titulo.value, file);
     }
+}
+
+// FUNCIONALIDAD LOGIN
+{
+
+    var formLogin = document.getElementById('formLogin');
+    var user = document.getElementById('user');
+    var password = document.getElementById('password');
+
+    formLogin.addEventListener('submit', iniciarSesion);
+
+
+    function iniciarSesion(event) {
+        event.preventDefault();
+        firebase.auth().signInWithEmailAndPassword(user.value, password.value)
+            .then((userCredential) => {
+                // Signed in
+                location.reload();
+                // ...
+            })
+            .catch((error) => {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                console.error(errorCode + ' : ' + errorMessage);
+            });
+    }
+
+    // Mostrar boton correspondiente
+    var loginButton = document.getElementsByName('loginButton')[0];
+    var exitButton = document.getElementsByName('exitButton')[0];
+
+    firebase.auth().onAuthStateChanged((user) => {
+        if (user) {
+            // User is signed in
+            loginButton.style.display = 'none';
+            exitButton.style.display = 'block';
+        } else {
+            // User is signed out
+            loginButton.style.display = 'block';
+            exitButton.style.display = 'none';
+        }
+    });
+
+    // Funcionalidad de logout
+
+    exitButton.addEventListener('click', cerrarSesion);
+
+    function cerrarSesion() {
+        firebase.auth().signOut().then(() => {
+            // Sign-out successful.
+            console.log('Sign-out successful.');
+        }).catch((error) => {
+            // An error happened.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.error(errorCode + ' : ' + errorMessage);
+        });
+    }
+
 }
