@@ -1,3 +1,18 @@
+// SERVICIOS DE FIREBASE
+{
+    // Initialize Cloud Firestore, Storage, Authentication through Firebase
+    firebase.initializeApp({
+        apiKey: 'AIzaSyBTbpc9ZvsNceq8Z1wmwWXjOdrbQHU46kY',
+        authDomain: 'gallery-joan-dupont.firebaseapp.com',
+        projectId: 'gallery-joan-dupont',
+        storageBucket: "gallery-joan-dupont.appspot.com"
+    });
+
+    var db = firebase.firestore();
+
+    var storageRef = firebase.storage().ref();
+}
+
 // ACTORES PRINCIPALES  OBRAS Y PINTORES
 {
     class Obra {
@@ -16,6 +31,18 @@
         constructor(nombre, apellido) {
             this.nombre = nombre;
             this.apellido = apellido;
+        }
+
+        pintar(titulo, file) {
+
+            let extension = file.name.substring(file.name.search(/\./));
+            let obraRef = storageRef.child(`${titulo}${extension}`);
+
+            obraRef.put(file).then(
+                function(snapshot) {
+                    location.reload();
+                }
+            );
         }
     }
 
@@ -65,5 +92,21 @@
         )
 
 
+    }
+}
+
+// FUNCIONALIDAD SUBIR OBRA
+{
+    var form = document.getElementById('formularioSubida');
+    var fileInput = document.getElementById('obraNueva');
+    var titulo = document.getElementById('tituloObra');
+
+    form.addEventListener('submit', subirObra);
+
+    function subirObra(event) {
+        event.preventDefault();
+        let file = fileInput.files[0];
+
+        pintor1.pintar(titulo.value, file);
     }
 }
