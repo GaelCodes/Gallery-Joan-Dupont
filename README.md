@@ -50,20 +50,4 @@ La solución tendrá forma de sitio web con los siguientes requerimientos funcio
 - La plataforma elegida es Firebase por su reducido coste en los servicios de alojamiento, almacenamiento, provisión de certificados y métricas del tráfico. Además, tiene muy buen funcionamiento en conjunto con Github
 - El cliente dispondrá de todo el almacenamiento gratuito que le proporcione la plataforma
 
-
-
-
-
-
-
-<style>
-    .cuadroTexto{
-        background-color:#202124;
-        padding:1em;
-        border-radius:1em;
-        text-align:justify;
-    }
-    .italic{
-        font-style:italic;
-    }
-</style>
+<img src="mystyles.svg" width="800" height="400" alt="Styles not founds">
