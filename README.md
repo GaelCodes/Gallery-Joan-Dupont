@@ -11,16 +11,15 @@ Un cliente muy importante proviniente de Francia nos encarga una solución para 
 
 #### <p align="center"> Comunicado del cliente (_leer con acento francés_) </P>
 
-<div class="cuadroTexto">
-Yo necesito un lugar en internet en donde colocar <span class="italic">mes oeuvres d'art</span>. Son cuadros preciosos de valor incalculable y necesito que el mundo los vea. <span class="italic">En plus</span>, estoy creando otras obras que pretendo enseñarlas al mundo.
-<span class="italic">Les oeuvres</span> tienen distinto tamaño y formato, la digitalización la realizará un estudio independiente de fotografía. Ellos me hacen llegar la versión digitalizada y soy yo el que debe hacerla visible en internet.
+Yo necesito un lugar en internet en donde colocar mes oeuvres d'art. Son cuadros preciosos de valor incalculable y necesito que el mundo los vea. En plus, estoy creando otras obras que pretendo enseñarlas al mundo.
+Les oeuvres tienen distinto tamaño y formato, la digitalización la realizará un estudio independiente de fotografía. Ellos me hacen llegar la versión digitalizada y soy yo el que debe hacerla visible en internet.
 
 
 De momento, solo necesito que sean visibles en pantallas grandes de ordenador.
 
-Siempre les pongo nombre a mis obras de arte, un título, estaría bien poder utilizar un campo de búsqueda para hallar las distintas obras. <span class="italic">Et évidemment </span>, los derechos de uso del software deben ser restringidos, deben estar bajo una licencia privada. Además, debe quedar clara la autoría de las obras, todas serán creadas por mí.
+Siempre les pongo nombre a mis obras de arte, un título, estaría bien poder utilizar un campo de búsqueda para hallar las distintas obras. Et évidemment , los derechos de uso del software deben ser restringidos, deben estar bajo una licencia privada. Además, debe quedar clara la autoría de las obras, todas serán creadas por mí.
 
-<span class="italic">Finalment, mes oeuvres d'art</span> son de gran prestigio y no me puedo permitir la deshonra del mensaje de sitio web inseguro, la solución debe funcionar bajo un protocolo seguro.
+Finalment, mes oeuvres d'art son de gran prestigio y no me puedo permitir la deshonra del mensaje de sitio web inseguro, la solución debe funcionar bajo un protocolo seguro.
 
 <p align="center"> Cordialment, Messier Joan Dupont </P>
 </div>
@@ -49,5 +48,3 @@ La solución tendrá forma de sitio web con los siguientes requerimientos funcio
 - Funcionará sobre el protocolo HTTPS
 - La plataforma elegida es Firebase por su reducido coste en los servicios de alojamiento, almacenamiento, provisión de certificados y métricas del tráfico. Además, tiene muy buen funcionamiento en conjunto con Github
 - El cliente dispondrá de todo el almacenamiento gratuito que le proporcione la plataforma
-
-<img src="mystyles.svg" width="800" height="400" alt="Styles not founds">
