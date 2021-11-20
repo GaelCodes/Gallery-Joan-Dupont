@@ -1,5 +1,4 @@
-# <p align="center"> - Gallery Joan Dupont -</p>
-
+# <p align="center"> - Gallery Joan Dupont - </p>
 
 ## <p align="center"> Contexto </p>
 
@@ -8,21 +7,22 @@ Un cliente muy importante proviniente de Francia nos encarga una solución para 
 ## <p align="center"> Análisis </p>
 ### <p align="center"> Técnica de Análisis 1 - Entrevista con el cliente </p>
 
-
-#### <p align="center"> Comunicado del cliente (_leer con acento francés_) </P>
-
-Yo necesito un lugar en internet en donde colocar mes oeuvres d'art. Son cuadros preciosos de valor incalculable y necesito que el mundo los vea. En plus, estoy creando otras obras que pretendo enseñarlas al mundo.
-Les oeuvres tienen distinto tamaño y formato, la digitalización la realizará un estudio independiente de fotografía. Ellos me hacen llegar la versión digitalizada y soy yo el que debe hacerla visible en internet.
+#### <p align="center"> Comunicado del cliente (_leer con acento francés_) </p>
 
 
-De momento, solo necesito que sean visibles en pantallas grandes de ordenador.
+_Yo necesito un lugar en internet en donde colocar mes oeuvres d'art. Son cuadros preciosos de valor incalculable y necesito que el mundo los vea. En plus, estoy creando otras obras que pretendo enseñarlas al mundo.
+Les oeuvres tienen distinto tamaño y formato, la digitalización la realizará un estudio independiente de fotografía. Ellos me hacen llegar la versión digitalizada y soy yo el que debe hacerla visible en internet._
 
-Siempre les pongo nombre a mis obras de arte, un título, estaría bien poder utilizar un campo de búsqueda para hallar las distintas obras. Et évidemment , los derechos de uso del software deben ser restringidos, deben estar bajo una licencia privada. Además, debe quedar clara la autoría de las obras, todas serán creadas por mí.
 
-Finalment, mes oeuvres d'art son de gran prestigio y no me puedo permitir la deshonra del mensaje de sitio web inseguro, la solución debe funcionar bajo un protocolo seguro.
+_De momento, solo necesito que sean visibles en pantallas grandes de ordenador._
 
-<p align="center"> Cordialment, Messier Joan Dupont </P>
-</div>
+_Siempre les pongo nombre a mis obras de arte, un título, estaría bien poder utilizar un campo de búsqueda para hallar las distintas obras. Et évidemment , los derechos de uso del software deben ser restringidos, deben estar bajo una licencia privada. Además, debe quedar clara la autoría de las obras, todas serán creadas por mí._
+
+_Finalment, mes oeuvres d'art son de gran prestigio y no me puedo permitir la deshonra del mensaje de sitio web inseguro, la solución debe funcionar bajo un protocolo seguro._
+
+_<p align="center"> Cordialment, Messier Joan Dupont </p>_
+
+</p>
 
 #### <p align="center"> Fin comunicado del cliente </P>
 
@@ -48,3 +48,4 @@ La solución tendrá forma de sitio web con los siguientes requerimientos funcio
 - Funcionará sobre el protocolo HTTPS
 - La plataforma elegida es Firebase por su reducido coste en los servicios de alojamiento, almacenamiento, provisión de certificados y métricas del tráfico. Además, tiene muy buen funcionamiento en conjunto con Github
 - El cliente dispondrá de todo el almacenamiento gratuito que le proporcione la plataforma
+
