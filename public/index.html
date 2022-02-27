@@ -16,41 +16,44 @@
 <body>
 
     <header class=" bg-info container-fluid d-flex justify-content-around py-3 align-items-center">
-        <h1 class="h4">Gallery Joan Dupont</h1>
+        <img id="logo" src="assets/Gallery-Joan-Dupont-logo.png" alt="Logo not found">
 
         <!-- Login -->
         <span class="position-relative">
 
-        
-            <button class="position-absolute btn btn-primary" name="loginButton" type="button"  data-bs-toggle="modal" data-bs-target="#modalLogin">
+
+            <button class="position-absolute btn btn-primary" name="loginButton" type="button" data-bs-toggle="modal"
+                data-bs-target="#modalLogin">
                 <i class="bi bi-person-fill"></i>
             </button>
-            <button class="position-absolute btn btn-secondary" name="exitButton" type="button" >
-              <i class="bi bi-box-arrow-left"></i>
+            <button class="position-absolute btn btn-secondary" name="exitButton" type="button">
+                <i class="bi bi-box-arrow-left"></i>
             </button>
 
 
 
-        <div id="modalLogin" class="modal" tabindex="-1">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Iniciar Sesión</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <form class="d-flex row justify-content-center mx-5" id="formLogin">
-                            <input class="form-label text-center py-2" id="user" type="email" value="joan-dupont@gallery-dupont.com" disabled>
-                            <input class="form-label text-center py-2" id="password" type="password" placeholder="Contraseña">
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                        <button type="submit" form="formLogin" class="btn btn-primary">Entrar</button>
+            <div id="modalLogin" class="modal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Iniciar Sesión</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="d-flex row justify-content-center mx-5" id="formLogin">
+                                <input class="form-label text-center py-2" id="user" type="email"
+                                    value="joan-dupont@gallery-dupont.com" disabled>
+                                <input class="form-label text-center py-2" id="password" type="password"
+                                    placeholder="Contraseña">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" form="formLogin" class="btn btn-primary">Entrar</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
         </span>
 
@@ -59,28 +62,30 @@
 
         <!-- Form subir obra -->
         <span>
-            <button name="uploadButton" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSubida">
+            <button name="uploadButton" type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#modalSubida">
                 <i class="bi bi-cloud-upload-fill"></i>
-              </button>
+            </button>
 
             <div id="modalSubida" class="modal" tabindex="-1">
                 <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title">Añadir obra a la colección</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Añadir obra a la colección</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form class="d-flex row justify-content-center mx-5" id="formularioSubida">
+                                <input class="form-label text-center py-2" id="obraNueva" type="file">
+                                <input class="form-label text-center py-2" id="tituloObra" type="text"
+                                    placeholder="Titulo de la obra">
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="submit" form="formularioSubida" class="btn btn-primary">Subir obra</button>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                        <form class="d-flex row justify-content-center mx-5" id="formularioSubida">
-                          <input class="form-label text-center py-2" id="obraNueva" type="file">
-                            <input class="form-label text-center py-2" id="tituloObra" type="text" placeholder="Titulo de la obra">
-                        </form>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                      <button type="submit" form="formularioSubida" class="btn btn-primary">Subir obra</button>
-                    </div>
-                  </div>
                 </div>
             </div>
 

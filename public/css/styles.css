@@ -1,5 +1,9 @@
 /* Pequeños ajustes en los botones */
 
+#logo {
+    width: 15em;
+}
+
 [name='uploadButton'],
 [name='loginButton'],
 [name='exitButton'] {
