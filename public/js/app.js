@@ -79,9 +79,9 @@
 
             obras.forEach(obra => {
                 obra.html = `
-                    <div class="card w-25 m-4">
+                    <div class="artwork card">
                         <img src="${obra.imgUrl}" class="card-img-top" alt="img-not-found">
-                        <div class="card-body">
+                        <div class="card-body text-center">
                             <h5 class="card-title">${obra.titulo}</h5>
                             <p class="card-text">Cuadro de ${obra.pintor} </p>
                         </div>
