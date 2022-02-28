@@ -46,9 +46,9 @@
                 <div id="modalLogin" class="modal" tabindex="-1">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title">Iniciar Sesión</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            <div class="modal-header justify-content-end">
+                                <h5 class="modal-title h2 m-auto">Iniciar Sesión</h5>
+                                <button type="button" class="btn-close m-0" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -57,12 +57,16 @@
                                         value="joan-dupont@gallery-dupont.com" disabled>
                                     <input class="form-label text-center py-2" id="password" type="password"
                                         placeholder="Contraseña">
+
+                                    <div class="form-text"> Hola, si te gustaría probar a subir alguna obra como lo
+                                        haría el señor Joan Dupont no dudes en contactarme para concertar una
+                                        entrevista. </div>
                                 </form>
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary"
                                     data-bs-dismiss="modal">Cancelar</button>
-                                <button type="submit" form="formLogin" class="btn btn-primary">Entrar</button>
+                                <button type="submit" form="formLogin" class="btn btn-primary h3">Entrar</button>
                             </div>
                         </div>
                     </div>
@@ -121,8 +125,52 @@
         </section>
     </main>
 
-    <footer>
 
+    <footer class="container-fluid">
+        <div class="row justify-content-end text-center mt-5 pt-5">
+
+
+            <!-- Copyright -->
+            <section class="col-12 col-md-4 order-md-2">
+                <p class="mb-0 mb-md-2">Desarrollado por</p>
+                <p>&#169; 2021 <b>Abigael Heredia Feliz</b> - Todos los derechos reservados</p>
+            </section>
+
+            <!-- Redes sociales -->
+            <section class="col-12 col-md-4 order-md-3 mb-4 mb-md-0 text-center">
+                <p>Redes sociales</p>
+                <ul class="my-social-items list-group list-unstyled inline-list list-group-horizontal justify-content-center">
+                    <li>
+                        <a href="https://github.com/GaelCodes" target="_blank" rel="noopener noreferrer" aria-label="Link to my Github profile">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/gael_codes/" target="_blank" rel="noopener noreferrer" aria-label="Link to my Instagram profile">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/gaelcodes" target="_blank" rel="noopener noreferrer" aria-label="Link to my Twitter profile">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/abigael-heredia/" target="_blank" rel="noopener noreferrer" aria-label="Link to my LinkedIn profile">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Términos y licencias -->
+            <section class="my-politics col-12 col-md-4 d-flex flex-column mb-4">
+                <a href="licenses/privacidad.html" class="mb-4" target="_blank" rel="noopener noreferrer">Política de
+                    privacidad</a>
+                <a href="licenses/licenses.html" target="_blank" rel="noopener noreferrer">Terminos y Licencias de
+                    terceros</a>
+            </section>
+        </div>
     </footer>
 
     <!-- Plugins bootstrap -->
